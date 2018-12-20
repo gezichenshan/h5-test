@@ -40,18 +40,63 @@
     <div class="swiper-wrapper">
         <div class="swiper-slide slide-1">
             <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">{{message}}</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">asdasd</p>
         </div>
-        <div class="swiper-slide slide-2">
-            <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text-1 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">我们见面了</p>
-            <p class="item-text-2 animated" data-ani-name="slideInLeft" data-ani-duration="1s" data-ani-delay="0.3s">你怯生生的</p>
-            <p class="item-text-3 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">却温暖的靠近</p>
-        </div>
-        <div class="swiper-slide slide-3">
+        <div class="swiper-slide slide-3" v-if="!isOurUser">
             <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
             <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p>
         </div>
+        <div class="swiper-slide slide-2" v-if="isOurUser">
+            <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text-1 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">还记得</p>
+            <p class="item-text-1 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">{{year}}年{{month}}月{{day}}日</p>
+            <p class="item-text-1 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">于{{pointName}}网点</p>
+            <p class="item-text-2 animated" data-ani-name="slideInLeft" data-ani-duration="1s" data-ani-delay="0.3s">我们见面了</p>
+            <p class="item-text-2 animated" data-ani-name="slideInLeft" data-ani-duration="1s" data-ani-delay="0.3s">你怯生生的</p>
+            <p class="item-text-3 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">却温暖的靠近</p>
+            <p class="item-text-3 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">让我，只想出现在你的每一天</p>
+        </div>
+        <div class="swiper-slide slide-4" v-if="isOurUser">
+            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">共享出行第一次</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你用了<span class="red">{{firstMins}}</span>分钟</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">消费了<span class="red">{{firstPayment}}</span>元</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">开启一段优质的新生活总是意义非凡</p>
+        </div>
+        <div class="swiper-slide slide-5" v-if="isOurUser">
+            <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">开车最久的一次</p>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">你开了<span class="red">{{longestJourneyMins}}</span>分钟</p>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">消费了<span class="red">{{longestJourneyPayment}}</span>元</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">开启一段优质的新生活总是意义非凡</p>
+        </div>
+        <div class="swiper-slide slide-6" v-if="isOurUser">
+            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">这一年</p>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">你在{{commonlyRentSiteName}}网点取车次数达到{{commonlyRentSiteNum}}次</p>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">在{{commonlyReturnSiteName}}网点还车次数达到{{commonlyReturnSiteNum}}次</p>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">老熟人了，连运维小哥都认识你了</p>
+        </div>
+
+        <!-- slide-7貌似没有提供相关数据 -->
+        <div class="swiper-slide slide-7" v-if="isOurUser">
+            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你共完成xx笔订单</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">共计用车xx小时</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">总共消费xxx元</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">超过了</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">共计用车xx小时</p>
+        </div>
+
+        <div class="swiper-slide slide-8" v-if="isOurUser">
+            <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你共邀请了{{inviteNum}}人加入先导出行大家族</p>
+        </div>
+        <div class="swiper-slide slide-9" v-if="isOurUser">
+            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p>
+        </div>
+        
     </div>
 </div>
 
@@ -73,14 +118,133 @@ asdasdadasd
 </div> -->
 
 <script>
+    let username = '13750042892'
+    let timestamp = new Date().getTime()//'1517753310782'
+    let key = '9048a3dbab43c51098460b31fc14753f'
+    let formedString = `timestamp=${timestamp}&username=${username}&key=${key}`
+    let sign= md5(formedString).toUpperCase()
+
     var app = new Vue({
-    el: '#whole-year-statics-app',
-    data: {
-        message: '尤记得在湖南的一见如故'
-    }
+        el: '#whole-year-statics-app',
+        data: {
+            isOurUser:true,
+            year:'',
+            month:'',
+            day:'',
+            pointName:'',
+            firstMins:0,
+            firstPayment:0,
+            longestJourneyMins:0,
+            longestJourneyPayment:0,
+            commonlyRentSiteNum:0,
+            commonlyRentSiteName:'',
+            commonlyReturnSiteNum:0,
+            commonlyReturnSiteName:'',
+            inviteNum:0,
+            crossCityNum:0,
+            couponNum:0,
+            couponAmount:0,
+            driveLessThanTenNum:0,
+            userIndex :0,
+            totalMiles :0,
+        },
+        methods:{
+            fetData(){
+                let self = this
+                $.ajax({
+                    type: "POST",
+                    cache: false,
+                    url: "http://ready-go.cn:9090/osp/statistics/yearEndstatis.dc",
+                    data: {
+                        username,
+                        timestamp,
+                        sign,
+                    },
+                    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                    datatype: "JSON",
+                    success: function (data) {
+                        console.log('vueData',data)
+                        const code = data.resultCode
+                        const statisticsData = data.statisticsDate
+                        if(code==="0000"){//成功
+                            // init(statisticsData)
+                            var firstUseTime = statisticsData.firstUseTime
+                            var firstUseTimeArr = firstUseTime.split('-')
+                            self.year = firstUseTimeArr[0]
+                            self.month = firstUseTimeArr[1]
+                            self.day = firstUseTimeArr[2]
+                            self.pointName = statisticsData.point_name
+                            self.firstMins = statisticsData.mins
+                            self.firstPayment = statisticsData.real_pay_cost
+                            self.longestJourneyMins = statisticsData.longest_order_time
+                            self.longestJourneyPayment = statisticsData.longest_pay_cost
+                            self.commonlyRentSiteNum = statisticsData.take_car_num,
+                            self.commonlyRentSiteName = statisticsData.take_car_name,
+                            self.commonlyReturnSiteNum = statisticsData.ret_car_num,
+                            self.commonlyReturnSiteName = statisticsData.ret_car_name,
+                            self.inviteNum = statisticsData.inviter_num
+                            self.crossCityNum =  statisticsData.cross_city_num
+                            self.couponNum = statisticsData.coupon_num,
+                            self.couponAmount = statisticsData.reduce_cost,
+                            self.driveLessThanTenNum = statisticsData.Less_ten_num,
+                            self.userIndex = statisticsData.user_index
+                            self.totalMiles = statisticsData.total_mils
+                            // data.statisticsDate.firstUseTime = firstUseTime.split('-')
+                            
+                            this.shema = data.statisticsDate
+                        }else if(code==="5555"){//没有用户信息
+                            self.isOurUser = false
+                        }else if(code==="9999"){//失败
+
+                        }else{
+
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+                    }
+                });
+            }
+        },
+        mounted(){
+            this.fetData()
+        }
     })
+    
+    
+    
 </script>
 
 </body>
 
 </html>
+
+<!-- $.ajax({
+    type: "POST",
+    cache: false,
+    url: "http://ready-go.cn:9090/osp/statistics/yearEndstatis.dc",
+    data: {
+        username,
+        timestamp,
+        sign,
+    },
+    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+    datatype: "JSON",
+    success: function (data) {
+        console.log(data)
+        const code = data.resultCode
+        const statisticsData = data.statisticsDate
+        if(code==="0000"){//成功
+            // init(statisticsData)
+        }else if(code==="5555"){//没有用户信息
+
+        }else if(code==="9999"){//失败
+
+        }else{
+
+        }
+    },
+    error: function (xhr, status, error) {
+        console.log(error);
+    }
+}); -->
