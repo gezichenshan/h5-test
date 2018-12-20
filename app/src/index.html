@@ -112,11 +112,6 @@
     <source src="audios/background.mp3" type="audio/mpeg">
 </audio>
 
-<!-- <div id="app">
-{{ message }}
-asdasdadasd
-</div> -->
-
 <script>
     let username = '13750042892'
     let timestamp = new Date().getTime()//'1517753310782'
@@ -218,33 +213,3 @@ asdasdadasd
 </body>
 
 </html>
-
-<!-- $.ajax({
-    type: "POST",
-    cache: false,
-    url: "http://ready-go.cn:9090/osp/statistics/yearEndstatis.dc",
-    data: {
-        username,
-        timestamp,
-        sign,
-    },
-    contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-    datatype: "JSON",
-    success: function (data) {
-        console.log(data)
-        const code = data.resultCode
-        const statisticsData = data.statisticsDate
-        if(code==="0000"){//成功
-            // init(statisticsData)
-        }else if(code==="5555"){//没有用户信息
-
-        }else if(code==="9999"){//失败
-
-        }else{
-
-        }
-    },
-    error: function (xhr, status, error) {
-        console.log(error);
-    }
-}); -->
