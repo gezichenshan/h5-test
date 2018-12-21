@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Wechat H5 Boilerplate</title>
+    <title>先导出行-我的年终账单</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Add your keywords and description here for SEO. -->
     <meta name="keywords" content="">
@@ -39,62 +39,71 @@
 <div class="swiper-container" id="whole-year-statics-app">
     <div class="swiper-wrapper">
         <div class="swiper-slide slide-1">
-            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">asdasd</p>
+            <image src="./images/test-1.jpeg"height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
         </div>
-        <div class="swiper-slide slide-3" v-if="!isOurUser">
-            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p>
+        <div class="swiper-slide slide-2" v-if="!isOurUser">
+            <image src="./images/test-2.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div> -->
         </div>
-        <div class="swiper-slide slide-2" v-if="isOurUser">
-            <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text-1 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">还记得</p>
-            <p class="item-text-1 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">{{year}}年{{month}}月{{day}}日</p>
-            <p class="item-text-1 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">于{{pointName}}网点</p>
-            <p class="item-text-2 animated" data-ani-name="slideInLeft" data-ani-duration="1s" data-ani-delay="0.3s">我们见面了</p>
-            <p class="item-text-2 animated" data-ani-name="slideInLeft" data-ani-duration="1s" data-ani-delay="0.3s">你怯生生的</p>
-            <p class="item-text-3 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">却温暖的靠近</p>
-            <p class="item-text-3 animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">让我，只想出现在你的每一天</p>
+        <div class="swiper-slide slide-3" v-if="isOurUser">
+                <image src="./images/test-3.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p> -->
         </div>
         <div class="swiper-slide slide-4" v-if="isOurUser">
-            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">共享出行第一次</p>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你用了<span class="red">{{firstMins}}</span>分钟</p>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">消费了<span class="red">{{firstPayment}}</span>元</p>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">开启一段优质的新生活总是意义非凡</p>
+                <image src="./images/test-4.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text son-1 animated" data-ani-name="fadeIn" data-ani-duration="1s" data-ani-delay="0.3s"><span class="red">{{firstMins}}</span></p>
+            <p class="item-text son-2 animated" data-ani-name="fadeIn" data-ani-duration="1s" data-ani-delay="0.3s"><span class="red">{{firstPayment}}</span></p> -->
         </div>
         <div class="swiper-slide slide-5" v-if="isOurUser">
-            <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">开车最久的一次</p>
+                <image src="./images/test-5.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">开车最久的一次</p>
             <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">你开了<span class="red">{{longestJourneyMins}}</span>分钟</p>
             <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">消费了<span class="red">{{longestJourneyPayment}}</span>元</p>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">开启一段优质的新生活总是意义非凡</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">开启一段优质的新生活总是意义非凡</p> -->
         </div>
         <div class="swiper-slide slide-6" v-if="isOurUser">
-            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">这一年</p>
+                <image src="./images/test-6.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">这一年</p>
             <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">你在{{commonlyRentSiteName}}网点取车次数达到{{commonlyRentSiteNum}}次</p>
             <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">在{{commonlyReturnSiteName}}网点还车次数达到{{commonlyReturnSiteNum}}次</p>
-            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">老熟人了，连运维小哥都认识你了</p>
+            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">老熟人了，连运维小哥都认识你了</p> -->
         </div>
 
         <!-- slide-7貌似没有提供相关数据 -->
         <div class="swiper-slide slide-7" v-if="isOurUser">
-            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你共完成xx笔订单</p>
+                <image src="./images/test-7.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你共完成xx笔订单</p>
             <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">共计用车xx小时</p>
             <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">总共消费xxx元</p>
             <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">超过了</p>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">共计用车xx小时</p>
+            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">共计用车xx小时</p> -->
         </div>
 
         <div class="swiper-slide slide-8" v-if="isOurUser">
-            <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你共邀请了{{inviteNum}}人加入先导出行大家族</p>
+                <image src="./images/test-8.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated"  data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="slideInRight" data-ani-duration="1s" data-ani-delay="0.3s">你共邀请了{{inviteNum}}人加入先导出行大家族</p> -->
         </div>
         <div class="swiper-slide slide-9" v-if="isOurUser">
-            <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div>
-            <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p>
+                <image src="./images/test-9.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p> -->
+        </div>
+        <div class="swiper-slide slide-10" v-if="isOurUser">
+            <image src="./images/test-10.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p> -->
+        </div>
+        <div class="swiper-slide slide-11" v-if="isOurUser">
+            <image src="./images/test-11.jpeg" width='100%' height='100%'/>
+            <!-- <div class="item-image animated" data-ani-duration="1s" data-ani-delay="0s"></div> -->
+            <!-- <p class="item-text animated" data-ani-name="flipInY" data-ani-duration="1s" data-ani-delay="0.3s">上述只是测试文案</p> -->
         </div>
         
     </div>

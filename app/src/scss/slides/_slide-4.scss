@@ -2,15 +2,15 @@
     background-color: #e88a63;
     // background-color: #fff;
     .item-image {
-        width: 100%;
-        height: 100%;
+        width: 105%;
+        height: 105%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         // top: 4rem;
-        left: 0;
-        right: 0;
+        left: -10px;
+        top: -10px;
         margin: auto;
         // background-image: url('../images/github-1.png');
         background-image: url('../images/test-4.jpeg');
@@ -20,11 +20,19 @@
         color: #000;
         font-size: 1.2rem;
         font-weight: bold;
-        // position: absolute;
-        // top: 24rem;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
+        position: absolute;
+        // top: 2rem;
+        // left: 20;
+        // right: 0;
+        // margin: 0 auto;
+        // text-align: center;
+    }
+    .son-1{
+        top: 5.5vh;
+        left: 13vh;
+    }
+    .son-2{
+        top: 4.4rem;
+        left: 6.4rem;
     }
 }

@@ -1,5 +1,5 @@
-.slide-8 {
-    background-color: #5cc2f1;
+.slide-10 {
+    background-color: #9993c1;
     // background-color: #fff;
     .item-image {
         width: 105%;
@@ -13,18 +13,17 @@
         top: -10px;
         margin: auto;
         // background-image: url('../images/github-3.png');
-        background-image: url('../images/test-8.jpeg');
+        background-image: url('../images/test-10.jpeg');
     }
     .item-text {
         width: 18rem;
-        color: #333;
-        font-size: 1rem;
+        color: #fff;
+        font-size: 1.2rem;
         font-weight: bold;
         position: absolute;
-        // top: 24rem;
+        top: 24rem;
         left: 0;
         right: 0;
-        bottom: 3rem;
         margin: 0 auto;
         text-align: center;
     }

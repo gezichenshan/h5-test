@@ -2,56 +2,20 @@
     background-color: #5cc2f1;
     // background-color: #fff;
     .item-image {
-        width: 100%;
-        height: 100%;
+        width: 105%;
+        height: 105%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
         // top: 4rem;
-        left: 0;
-        right: 0;
+        left: -10px;
+        top: -10px;
         margin: auto;
         // background-image: url('../images/github-2.png');
         background-image: url('../images/test-2.jpeg');
     }
     .item-text {
-        width: 18rem;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-        // position: absolute;
-        // top: 24rem;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .item-text-1 {
-        width: 18rem;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-        // position: absolute;
-        // top: 20rem;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .item-text-2 {
-        width: 18rem;
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-        // position: absolute;
-        // top: 22rem;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .item-text-3 {
         width: 18rem;
         color: #fff;
         font-size: 1.2rem;
